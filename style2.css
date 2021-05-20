@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*
+   Author:   Xiaoqiang Wei
+   Date:     05/17/2021
+*/
+
+html {
+    height: 100%;
+    background-color: hsl(22, 100%, 70%)
+}
+
+div#topLinks, div.divider, div#h1, div#h2 {
+    display: block;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+h2 {
+    font: 1em sans-serif;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+}
+
+label {
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+input:not(#yes, #no, #sub), select, textarea {
+    font-size: 1em;
+    margin: 5px 5px 10px 5px;
+    width: 95%;
+    height: 40px;
+}
+
+input#yes, input#no {
+    font-size: 1em;
+    margin: 5px 5px 10px 5px;
+}
+
+div#yesNo {
+    margin: 10px auto;
+}
+
+textarea {
+    height: 80px;
+    font-size: 1.5em;
+}
+
+input#sub {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+
+div#topLinks {
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#topLinks a {
+    margin-right: 10px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+#topLinks a:link, #topLinks a:visited {
+    color: rgb(22, 98, 212);
+    text-decoration: none;
+}
+
+#topLinks a:hover {
+    color: yellow;
+}
+
+div#form {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+input:focus {
+    background-color: rgb(245, 245, 140);   
+}
+
+input#fnBox:focus:valid, input#lnBox:focus:valid, input#phoneBox:focus:valid,  input#ageBox:focus:valid {
+    background-color: rgb(220, 255, 220);
+}
+
+input#fnBox:focus:invalid, input#lnBox:focus:invalid, input#phoneBox:focus:invalid,  input#ageBox:focus:invalid {
+    background-color: rgb(255, 232, 232);
+}
+    
+@media screen and (min-width: 481px) {
+    #topLinks a {
+        display: block;
+        float: right;
+        margin-left: 20px;
+    }
+    
+    div.divider {
+        display: flex;
+        align-items: center;
+        color: yellow;
+    }
+
+    div.divider::before, div.divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    #topLinks a {
+        display: block;
+        float: right;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+div#topLinks, div.divider, div#h1, div#h2 {
+    display: block;
+    margin: 20px;
+}
+
+div#topLinks {
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#topLinks a {
+    margin-right: 10px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+#topLinks a:link, #topLinks a:visited {
+    color: rgb(22, 98, 212);
+    text-decoration: none;
+}
+
+#topLinks a:hover {
+    color: yellow;
+}
+
+@media screen and (min-width: 481px) {
+    #topLinks a {
+        display: block;
+        float: right;
+        margin-left: 20px;
+    }
+    
+    div.divider {
+        display: flex;
+        align-items: center;
+        color: yellow;
+    }
+
+    div.divider::before, div.divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: black;
+    }
+}
