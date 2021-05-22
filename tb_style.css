@@ -7,7 +7,6 @@
 
 html {
     font-size: 1em;
-
     background: linear-gradient(to bottom right, gray, silver);
 
 }
@@ -34,7 +33,7 @@ div#deeds {
     background-color: #E5E5E8;
 }
 
-div {
+div:not(#topLinks) {
     margin: 20px;
 }
 
@@ -77,23 +76,8 @@ blockquote {
 
 li {
     list-style-type: disc;
-    margin: 10px;
+    
 }
-
-div#topLinks {
-    height: 30px;
-    text-align: right;
-    font-size: 1em;
-}
-
-#topLinks a {
-    border: 1px solid white;
-    align-items: center;
-    padding: 5px 15px;
-    border-radius: 4px;
-    background-color: white;
-}
-
 
 #topLinks a:link, #topLinks a:visited {
     color: rgb(22, 98, 212);
@@ -101,20 +85,36 @@ div#topLinks {
 }
 
 #topLinks a:hover {
-    color: yellow;
+    color: black;
 }
 
-
+a#navicon {
+    display: none;
+}
 
 @media screen and (min-width: 481px) {
     article {
         max-width: 460px;
-    }    
+    }
+
+    div#topLinks {
+        height: 30px;
+        text-align: right;
+        font-size: 1em;
+    }
 
     #topLinks a {
         display: block;
         float: right;
         margin-left: 20px;
+    }
+
+    #topLinks a {
+        border: 1px solid white;
+        align-items: center;
+        padding: 5px 15px;
+        border-radius: 4px;
+        background-color: white;
     }
 
     div.divider {
@@ -129,18 +129,45 @@ div#topLinks {
         height: 1px;
         background-color: black;
     }
+
+
 }
 
 @media screen and (max-width: 480px) {
     html {
         width: 100%;
+        display: block;
     }
+
     img {
         width: 100%;
     }
-    #topLinks a {
-        display: block;
-        float: right;
-        margin-left: 20px;
+
+    #topLinks{
+        height: 100px;
+        width: 100%;
+        text-align: right;
     }
+
+    a:not(#GB) {
+        border: 1px solid white;
+        background-color: white;
+        color: violet;
+        height: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    a#navicon {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    nav ul:hover{
+        display: block;
+    }
+
 }
