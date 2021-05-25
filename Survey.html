@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <!--
+    
+      Author:   Xiaoqiang Wei
+      Date:     05/17/2021
+   
+      -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Survey Page</title>
+       <link rel="stylesheet" href="reset.css" />
+       <link rel="stylesheet" href="sv_style.css" />
+       <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="topLinks">
+        <div class="button"><a id="sp" href="Survey.html">Survey</a></div>
+        <div class="button"><a id="tp" href="TributePage.html">Tribute</a></div>
+        <div class="button"><a id="ho" href="index.html">Home</a></div>
+    </div>
+    <div class="divider">
+    </div>
+
+    <div id="h1"><h1>Survey Form</h1></div>
+    <div id="h2"><h2>Required Item (*)</h2></div>
+    <div id="form">
+        <form id="survey">
+            <fieldset>
+                <div>
+                    <div class=""><label for="fnBox">First Name*</label></div>
+                    <div><input id="fnBox" type="text" name="firstName" placeholder="Enter your first name" required /></div>
+                </div>
+                <div>
+                    <div><label for="lnBox">Last Name*</label></div>
+                    <div><input id="lnBox" type="text" name="lastName" placeholder="Enter your last name" required /></div>
+                </div>
+                <div>
+                    <div><label for="emailBox">Email*</label></div>
+                    <div><input id="emailBox" type="email" name="Email" placeholder="Enter your email address" 
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required /></div>
+                </div>
+                <div>
+                    <div><label for="ageBox">Age</label></div>
+                    <div><input id="ageBox" type="number" name="age" min="10" max="99" placeholder="Enter your age" /></div>
+                </div>
+                <div>
+                    <div><label for="phoneBox">Phone Number</label></div>
+                    <div><input id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" 
+                    placeholder="(nnn) nnn-nnnn" name="phoneNumber"/></div>
+                </div>
+                <div>
+                <div><label>Do you like playing video games?</label></div>
+                </div>
+                <div>
+                <div id="yesNo">
+                    <input id="yes" name="videoGame" type="radio" />
+                    <label for="yes">Yes</label>
+                    <input id="no" name="videoGame" type="radio" />
+                    <label for="no">No</label>
+                </div>
+                </div>
+                <div>
+                <div>
+                    <label for="select">What kind of video game do you like?</label>
+                </div>
+                <div>
+                        <select id="select" name="game">
+                            <option value="">--Select a Option--</option>
+                            <option value="APG">APG</option>
+                            <option value="CAG">CAG</option>
+                            <option value="FPS">FPS</option>
+                            <option value="FTG">FTG</option>
+                            <option value="MMORPG">MMORPG</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Other">Other</option> 
+                    </select>
+                    </div>
+                </div>
+                <div>
+                    <div><label for="textBox">Any Comments?</label></div>
+                    <div><textarea type="text" id="textBox" placeholder="Leave your comments hers!"></textarea></div>
+                </div>
+            
+                <div id="submitButton">
+                    <input type="submit" id="sub" value="Submit" />
+                </div>
+
+                </fieldset>
+        </form>
+    </div>
+</body>
+<footer>
+    
+</footer>
+</html>
