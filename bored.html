@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>Boredom destroyer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bored_style.css">
+    <link rel="shortcut icon" href="github1.ico">
+	<script src="bored_js.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="top1">
+        <nav class="navbar navbar-expand-md">
+    <div class="container-fluid" id="topBar">
+        <div class="container p-3">
+            <a class="navbar-brand" href="#">BoredAPI</a>
+        </div>
+    </div>
+        </nav>
+        </div>
+
+    <div class="container-fluid" id="top2">
+        <div class="col" id="head1"><h1 class="h1 text-center p-4">Let's find you something to do</h1></div>
+    </div>
+
+    <div class="container-fluid" id="middle1">
+    <div class="container p-4">
+        <div class="col">
+            <h5 class="h5 text-center">Try it out</h5>
+        </div>
+        <div class="row" id="enterBox">
+        <div class="col text-center border fs-4" id="s1">
+            <span id="lin1">https://www.boredapi.com/api/</span>
+        </div>
+        <div class="col ps-0 fs-4 lg" id="tb">
+            <input type="text" id="textBox" value="activity">
+        </div>
+        </div>
+        <div class="col text-center">
+            <span>Try a few others:</span> 
+            <a class="link-primary" id="try1" value="activity?type=recreational">activity?type=recreational</a> 
+            <a class="link-info" id="try2" value="activity?participants=1">activity?participants=1</a>
+        </div>
+        <div class="col text-center pt-4 fs-4">
+            <input type="submit" id="submit" value="submit">
+        </div>
+    </div>
+
+    <div class="container border" id="middle2">
+        <table class="table" id="resultTable">
+            <thead>
+                <tr>
+                    <th scope="col">Result</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="result" >
+                
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div class="container-fluid border" id="bottom1">
+        <div class="container">
+    <table class="table" id="documentation">
+        <thead>
+            <tr>
+                <th scope="col">Documentation</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">activity</th>
+                <th>Description of the queried activity</th>
+            </tr>
+            <tr>
+                <th scope="row">accessibility</th>
+                <th>A factor describing how possible an event is to do with zero being the most accessible<br />
+                    [0.0, 1.0]</th>
+            </tr>
+            <tr>
+                <th scope="row">type</th>
+                <th>Type of the activity<br />
+                    ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"]</th>
+            </tr>
+            <tr>
+                <th scope="row">participants</th>
+                <th>The number of people that this activity could involve<br />
+                    [0, n]</th>
+            </tr>
+            <tr>
+                <th scope="row">price</th>
+                <th>A factor describing the cost of the event with zero being free<br />
+                    [0, 1]</th>
+            </tr>
+            <tr>
+                <th scope="row">key</th>
+                <th>A unique numeric id<br />
+                    [1000000, 9999999]</th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+
+    <div class="container-fluid border" id="bottom2">
+        <div class="row">
+        <div class="col text-center">
+            <h3 class="h3 pt-3">Bored API</h3>
+            <div class="row">
+            <div class="col text-end"><a href="https://github.com/drewthoennes/Bored-API" alt="resource" target="_blank">
+                <img src="github1.ico" alt="github" id="g1"></a>
+            </div>
+
+            <div class="col text-start"><a href="https://github.com/drewthoennes/Bored-API/issues" alt="resource" target="_blank">
+                <img src="debug.png" alt="github" id="g2"></a>
+            </div>
+
+            </div>
+        </div>
+        <div class="col text-center" id="bottomLink">
+            <div class="col p-2">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="col p-1">
+                <a href="https://www.boredapi.com/about" target="_blank">About</a>
+            </div>
+            <div class="col p-1">
+                <a href="https://www.boredapi.com/contributing" target="_blank">Contributing</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

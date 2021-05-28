@@ -1,0 +1,75 @@
+
+html {
+    height: 100%;
+    display: block;
+}
+
+/*head style*/
+#head1 {
+    height: 100px;
+}
+
+#top1 {
+    background-color: #edede8;
+}
+
+#top2 {
+    background-color: #eeddd3;
+}
+
+/*body style */
+#resultDiv {
+    height: 350px;
+}
+
+input#textBox {
+    width: 100%;
+}
+
+#try1, #try2 {
+    cursor: pointer;
+}
+
+input#submit {
+    border-radius: 5px;
+}
+
+#s1 {
+    background-color: #f8f8f8;;
+}
+
+#middle1 {
+    background-color: #f0efeb;
+}
+
+#middle2 {
+    background-color: #fff1e6;
+}
+
+/*footer style */
+
+#bottom1 {
+    background-color: #eddcd2;
+}
+
+#bottom2 {
+    height: 117px;
+    background-color: #e8d1c5;
+}
+
+#g1, #g2 {
+    width: 10%;
+    height: 100%;
+}
+
+div#bottomLink a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 994px) {
+    #s1 {
+        display: none;
+    }
+
+}
