@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const xhr = new XMLHttpRequest();
     xhr.addEventListener("load", responseReceivedHandler);
     xhr.responseType = "json";
-    xhr.open("GET", "http://www.boredapi.com/api/" + input);
+    xhr.open("GET", "https://www.boredapi.com/api/" + input);
     xhr.send();
  }
 
