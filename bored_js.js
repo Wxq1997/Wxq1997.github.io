@@ -3,7 +3,6 @@ window.addEventListener("DOMContentLoaded", function () {
     findActivity("activity");
     document.querySelector("#submit").addEventListener("click", function () {
         const input = document.getElementById("textBox").value;
-
         findActivity(input);	   
     });
  });
@@ -19,10 +18,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
  document.querySelector("#try1").addEventListener("click", function() {
     document.getElementById("textBox").value = document.querySelector("#try1").innerText;
+    findActivity(document.getElementById("textBox").value);
 })
 
 document.querySelector("#try2").addEventListener("click", function() {
     document.getElementById("textBox").value = document.querySelector("#try2").innerText;
+    findActivity(document.getElementById("textBox").value);
 })
 
  function responseReceivedHandler() {
@@ -30,7 +31,7 @@ document.querySelector("#try2").addEventListener("click", function() {
     const input = document.getElementById("textBox").value;
     if (this.status === 200) {
        if (this.response.error || input === "") {
-          result.innerHTML = 'Incorrect API url, please try again.';
+          result.innerHTML = 'Incorrect API url or no activity found, please try again.';
           document.getElementById("middle2").style.height = "346px";
        }
        else {
@@ -75,6 +76,6 @@ document.querySelector("#try2").addEventListener("click", function() {
        }
    
  }  else {
-    result.innerHTML = "No activity found with the specified parameters."
+    result.innerHTML = "Incorrect API url, please try again.";
  }
  }
