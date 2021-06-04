@@ -31,6 +31,7 @@ document.querySelector("#try2").addEventListener("click", function() {
     if (this.status === 200) {
        if (this.response.error || input === "") {
           result.innerHTML = 'Incorrect API url, please try again.';
+          document.getElementById("middle2").style.height = "346px";
        }
        else {
             let html = "<tr>";
