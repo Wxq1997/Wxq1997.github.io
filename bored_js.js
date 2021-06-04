@@ -31,7 +31,7 @@ document.querySelector("#try2").addEventListener("click", function() {
     const input = document.getElementById("textBox").value;
     if (this.status === 200) {
        if (this.response.error || input === "") {
-          result.innerHTML = 'Incorrect API url or no activity found, please try again.';
+          result.innerHTML = 'Incorrect API URL or no activity found, please try again.';
           document.getElementById("middle2").style.height = "346px";
        }
        else {
@@ -76,6 +76,6 @@ document.querySelector("#try2").addEventListener("click", function() {
        }
    
  }  else {
-    result.innerHTML = "Incorrect API url, please try again.";
+    result.innerHTML = "Incorrect API URL, please try again.";
  }
  }
